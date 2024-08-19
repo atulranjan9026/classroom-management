@@ -5,7 +5,7 @@ const app = express();
 require('dotenv').config();
 
 const corsOptions = {
-  origin: 'https://classroom-management-7zjd.onrender.com', // Your frontend URL
+  origin: 'http://127.0.0.1:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS method
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
