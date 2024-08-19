@@ -9,6 +9,6 @@ export const api = axios.create({
   },
 });
 
-export const login = (email, password) => api.post('/auth/login', { email, password });
+export const login = (email, password) => api.post('/api/auth/login', { email, password });
+
 export const createClassroom = (data) => api.post('/classrooms/create', data);
-// Add more API functions as needed

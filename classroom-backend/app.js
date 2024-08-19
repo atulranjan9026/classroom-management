@@ -7,11 +7,12 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'https://classroom-management-qmbt-2ceve0k6v-atul-ranjans-projects.vercel.app', // Your frontend URL
+  origin: 'https://classroom-management-7zjd.onrender.com', // Your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
+  credentials: true,
 }));
+
 
 app.use(bodyParser.json());
 // Import routes
