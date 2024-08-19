@@ -1,0 +1,228 @@
+/* Container for the form */
+.classroom-form-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+/* Form styling */
+.classroom-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form input styling */
+.classroom-form-container input,
+.classroom-form-container select {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+/* Placeholder text styling */
+.classroom-form-container input::placeholder {
+  color: #888;
+}
+
+/* Input focus styling */
+.classroom-form-container input:focus,
+.classroom-form-container select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Button styling */
+.classroom-form-container button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover styling */
+.classroom-form-container button:hover {
+  background-color: #218838;
+}
+
+/* Section for student checkboxes */
+.student-checkboxes {
+  /* margin-top: 20px; */
+}
+
+/* Heading for student checkboxes */
+.student-checkboxes h3 {
+  /* margin-bottom: 12px; */
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Individual checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+/* Checkbox styling */
+.checkbox-container input[type="checkbox"] {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  accent-color: #28a745; /* Modern checkbox color */
+}
+
+/* Label styling for checkboxes */
+.checkbox-container label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Styling for checkbox container when hovered */
+.checkbox-container:hover {
+  background-color: #e0e0e0;
+}
+
+/* Checkbox focus styling */
+.checkbox-container input[type="checkbox"]:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+/* Time input styling */
+.time-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.time-group:last-child {
+  margin-right: 0;
+}
+
+/* Days of the week select styling */
+.days-of-week select {
+  height: 120px; /* Adjust height to show more options */
+}
+/* React Select styling */
+.react-select__control {
+  margin-bottom: 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.react-select__control--is-focused {
+  border-color: #0056b3;
+}
+
+.react-select__menu {
+  border-radius: 8px;
+}
+
+.react-select__option--is-selected {
+  background-color: #0056b3;
+  color: white;
+}
+/* ClassroomForm.css */
+
+/* ClassroomForm.css */
+.classroom-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.success-message {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  padding: 10px;
+  border: 1px solid #c3e6cb; /* Border color matching background */
+  border-radius: 4px;
+  margin-bottom: 15px; /* Space between message and form */
+  font-size: 16px; /* Make text readable */
+  text-align: center; /* Center-align text */
+}
+
+input[type="text"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-group {
+  flex: 1;
+  margin: 5px;
+}
+
+.days-of-week,
+.student-checkboxes {
+  margin: 10px 0;
+}
+
+.checkbox-container {
+  margin: 5px 0;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* PrincipalDashboard.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #ff3333;
+}

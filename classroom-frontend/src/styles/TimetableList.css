@@ -1,0 +1,50 @@
+.timetable-list {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .timetable-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table-header {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table-header-cell {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table-body {
+    background-color: #ffffff;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-cell {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .no-timetables {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  

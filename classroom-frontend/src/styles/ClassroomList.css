@@ -1,0 +1,85 @@
+/* ClassroomList.css */
+
+.classroom-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classroom-list-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+span {
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .classroom-list-container {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+.classroom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.classroom-table th, .classroom-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.classroom-table th {
+  background-color: #f2f2f2;
+}
+
+.classroom-list-container {
+  margin: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

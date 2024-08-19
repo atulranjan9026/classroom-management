@@ -1,0 +1,37 @@
+/* General Styles for TeacherDashboard */
+.TDashboard {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .h1 {
+    text-align: center;
+    color: #007bff; /* Blue color for the header */
+    margin-bottom: 20px;
+  }
+  
+  .teacher-dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the form and list */
+  }
+  
+  .student-form-container,
+  .student-list-container-TD {
+    flex: 1; /* Each container takes equal space */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .student-form-container {
+    margin-right: 10px; /* Space on the right side */
+  }
+  
+  .student-list-container-TD{
+    margin-left: 10px; /* Space on the left side */
+  }
+  
