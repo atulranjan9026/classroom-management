@@ -18,7 +18,7 @@ const AuthForm = ({ onLogin }) => {
 
   return (
     <div className="auth-form-container">
-    
+    <h1>Login </h1>
       <form className="auth-form" onSubmit={handleSubmit}>
         <input
           type="email"

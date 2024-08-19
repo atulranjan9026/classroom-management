@@ -5,7 +5,7 @@ const Student = {};
 // Create a new student
 Student.StudentCreate = (name, rollNumber, studentClass, email, password) => {
   return new Promise((resolve, reject) => {
-    const role = 'students'; // Set the role to 'students'
+    const role = 'students'; 
     const query = 'INSERT INTO students (name, RollNumber, class, email, password, role) VALUES (?, ?, ?, ?, ?, ?)';
     db.query(query, [name, rollNumber, studentClass, email, password, role], (err, result) => {
       if (err) return reject(err);

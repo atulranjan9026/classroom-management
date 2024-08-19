@@ -20,7 +20,7 @@ const ClassroomForm = ({ onCreate }) => {
     T_name: '',
     start_time: '',
     end_time: '',
-    days_of_week: [], // Array of selected options
+    days_of_week: [],
     students: [],
   });
 
@@ -91,7 +91,12 @@ const ClassroomForm = ({ onCreate }) => {
       // Call the onCreate callback to update the ClassroomList
       onCreate();
     } catch (error) {
-      console.error('Error creating classroom', error);
+      if (error.response && error.response.data && error.response.data.message.includes('Duplicate entry')) {
+        alert('A classroom with the selected teacher already exists.');
+      } else {
+        console.error('Error creating classroom', error);
+        alert('An error occurred while creating the classroom.');
+      }
     }
   };
 

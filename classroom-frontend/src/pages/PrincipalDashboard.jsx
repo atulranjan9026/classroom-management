@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
+import { useNavigate } from 'react-router-dom';
 import ClassroomForm from '../components/ClassroomForm';
 import TeacherList from '../components/TeacherList';
 import StudentList from '../components/StudentList';
@@ -9,35 +9,26 @@ import ClassroomList from '../components/ClassroomList';
 import { createClassroom } from '../api';
 import '../styles/PrincipalDashboard.css';
 
-const PrincipalDashboard = () => {
+const PrincipalDashboard = ({ onLogout }) => {
   const [updateKey, setUpdateKey] = useState(0);
-  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const navigate = useNavigate();
 
   const handleCreateClassroom = async (classroomData) => {
-    setUpdateKey((prevKey) => prevKey + 1);
     try {
       const response = await createClassroom(classroomData);
       console.log('Classroom created:', response.data);
+      setUpdateKey((prevKey) => prevKey + 1);
     } catch (error) {
       console.error('Error creating classroom:', error);
+      // Consider showing an error message to the user here
     }
   };
 
   const handleLogout = () => {
     console.log('Logging out...');
-  
-    // Clear any stored tokens or user data
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-  
-    // Check if the token and user are removed
-    console.log('Token after logout:', localStorage.getItem('token'));
-    console.log('User after logout:', localStorage.getItem('user'));
-  
-    // Redirect to login page
+    onLogout();
     navigate('/');
   };
-  
 
   return (
     <div className="principal-dashboard-container">

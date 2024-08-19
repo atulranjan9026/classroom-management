@@ -5,6 +5,7 @@ const Classroom = require('../models/ClassroomModels');
 router.post('/create', async (req, res) => {
   const { classrooms, T_name, start_time, end_time, days_of_week, students } = req.body;
   try {
+    // Make sure that Classroom.create receives parameters correctly
     const result = await Classroom.create(classrooms, T_name, start_time, end_time, days_of_week, students);
     res.status(201).json({ message: 'Classroom created', result });
   } catch (err) {
@@ -12,6 +13,7 @@ router.post('/create', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
 
 
 // Route to get all classrooms

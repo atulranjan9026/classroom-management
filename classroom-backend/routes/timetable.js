@@ -15,7 +15,7 @@ router.post('/create', async (req, res) => {
 
 router.get('/', async (req, res) => {
   try {
-    const timetables = await Timetable.getAll(); // Ensure this method is implemented in your model
+    const timetables = await Timetable.getAll();  
     res.status(200).json(timetables);
   } catch (err) {
     res.status(500).json({ error: err.message });

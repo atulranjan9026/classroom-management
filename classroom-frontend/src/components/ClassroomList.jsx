@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { api } from '../api';
 import '../styles/ClassroomList.css';
 
-const ClassroomList = () => {
+const ClassroomList = ({Key}) => {
   const [classrooms, setClassrooms] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const ClassroomList = () => {
     };
 
     fetchClassrooms();
-  }, []);
+  }, [Key]);
 
   // Function to ensure days_of_week is always an array
   const formatDaysOfWeek = (daysOfWeek) => {
