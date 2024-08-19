@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://classroom-management-two.vercel.app/';
+const API_URL = 'https://classroom-management-nine.vercel.app/';
 
 export const api = axios.create({
   baseURL: API_URL,
